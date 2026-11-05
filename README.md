@@ -1,3 +1,27 @@
+# ShadeSync — Shade-Aware Route Planning
+
+Computer vision for more comfortable urban walking: U-Net shadow segmentation estimates shade coverage from satellite imagery, and candidate routes are ranked by shade-to-distance ratio.
+
+## Contribution and recognition
+
+Kawin Chamnanchak developed the U-Net shadow-segmentation component using Roboflow and ArcGIS/World Imagery. The project placed sixth nationally at the CMKL AI Innovator Award 2025.
+
+## Repository guide
+
+- `get_data_for_train/`: training-data preparation.
+- `models/`: model-related assets.
+- `API/`: backend integration.
+- `shadesync/`: application components.
+- `HowToRun.txt`: existing run notes.
+
+The pipeline is: route candidates → satellite imagery → shadow mask → shade coverage → route ranking. Check the existing run notes and dependency files before starting; installation has not been retested here.
+
+## Imagery and limitations
+
+Retain attribution and comply with ArcGIS/World Imagery, Google Maps, and dataset terms. Satellite imagery and predicted masks may be outdated or inaccurate; route suggestions do not guarantee shade or safe walking conditions.
+
+---
+
 # 🌳 ShadeSync  
 ### 🏆 CMKL AI Innovator Award 2025 — **6th Place**
 
